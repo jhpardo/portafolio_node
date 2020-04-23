@@ -1,6 +1,8 @@
 // Importacion de metodo router para crear las rutas 
 import { Router } from 'express';
 
+import { indexController } from '../controllers/indexControllers';
+
 class IndexRoutes {
     router: Router = Router();
 
@@ -10,7 +12,7 @@ class IndexRoutes {
 
     config() : void {
         //Ruta inicial / que responde lo que se acaba de iniciar
-        this.router.get('/', (req, res) => res.send('Hola index'));
+        this.router.get('/', indexController.index);
     }
 
 }

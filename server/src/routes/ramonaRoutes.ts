@@ -1,5 +1,7 @@
 import { Router } from 'express';
 
+import { ramonaController } from '../controllers/ramonaControllers';
+
 class RamonaRoutes {
     router : Router = Router();
 
@@ -8,7 +10,7 @@ class RamonaRoutes {
     }
 
     config(): void {
-        this.router.get('/', (req, res) => res.send ('Ruta de ramona'));
+        this.router.get('/', ramonaController.ramona);
     }
 }
 

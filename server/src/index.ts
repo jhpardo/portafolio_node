@@ -9,6 +9,7 @@ import cors from 'cors';
 //Importar rutas que se usaran en nuestra API
 import indexRoutes from './routes/indexRoutes';
 import ramonaRoutes from './routes/ramonaRoutes';
+import gamesRoutes from './routes/gamesRoutes';
 
 class Server{
 
@@ -36,6 +37,7 @@ class Server{
        // Importando la ruta que voy a utilizar
         this.app.use(indexRoutes);
         this.app.use('/api/ramona',ramonaRoutes);
+        this.app.use('/api/games',gamesRoutes);
     }
 
     start() : void{

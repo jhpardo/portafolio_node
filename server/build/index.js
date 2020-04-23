@@ -11,6 +11,7 @@ const cors_1 = __importDefault(require("cors"));
 //Importar rutas que se usaran en nuestra API
 const indexRoutes_1 = __importDefault(require("./routes/indexRoutes"));
 const ramonaRoutes_1 = __importDefault(require("./routes/ramonaRoutes"));
+const gamesRoutes_1 = __importDefault(require("./routes/gamesRoutes"));
 class Server {
     constructor() {
         this.app = express_1.default();
@@ -31,6 +32,7 @@ class Server {
         // Importando la ruta que voy a utilizar
         this.app.use(indexRoutes_1.default);
         this.app.use('/api/ramona', ramonaRoutes_1.default);
+        this.app.use('/api/games', gamesRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get('puerto'), () => {
