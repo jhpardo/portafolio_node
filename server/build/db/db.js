@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const mysql_1 = __importDefault(require("mysql"));
 const keys_1 = __importDefault(require("./keys"));
+//import { createPool } from "promise-mysql";
 //Se almacena en pool la forma de iniciar la conexion 
 const pool = mysql_1.default.createPool(keys_1.default.database);
 pool.getConnection((err, connection) => {

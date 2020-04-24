@@ -1,6 +1,8 @@
 import mysql from 'mysql';
 import keys from './keys';
 
+//import { createPool } from "promise-mysql";
+
 //Se almacena en pool la forma de iniciar la conexion 
 const pool = mysql.createPool(keys.database);
 
