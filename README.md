@@ -5,3 +5,4 @@ Creación de portafolio WEB con NODE JS V 12.16.2, ANGULAR, bootswatch(Bootstrap
 *Ejecución:     
 -correr TS: npm run build
 -arrancar servidor: npm run dev
+-ejecutar Angular: ng serve
