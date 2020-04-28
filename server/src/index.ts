@@ -5,7 +5,6 @@ import morgan from 'morgan';
 
 import cors from 'cors';
 
-
 //Importar rutas que se usaran en nuestra API
 import indexRoutes from './routes/indexRoutes';
 import ramonaRoutes from './routes/ramonaRoutes';
