@@ -13,6 +13,7 @@ import { GameListComponent } from './components/game-list/game-list.component';
 
 //Optendra los metodos para pedir  datos
 import {GamesService} from './services/games/games.service';
+import { BackgroundComponent } from './components/background/background.component';
 
 
 
@@ -22,7 +23,8 @@ import {GamesService} from './services/games/games.service';
     NavComponent,
     AboutComponent,
     GameFormComponent,
-    GameListComponent
+    GameListComponent,
+    BackgroundComponent
   ],
   imports: [
     BrowserModule,
